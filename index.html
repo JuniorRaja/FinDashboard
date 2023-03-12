@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
@@ -213,12 +214,115 @@
           <!-- END OF CARD 4 -->
         </div>
         <!-- END OF CARDS -->
+        <div class="monthly-report">
+          <div class="report">
+            <h3>Income</h3>
+            <div>
+              <details>
+                <h1>$29,023</h1>
+                <h6 class="success">+3.5%</h6>
+              </details>
+              <p class="text-muted">Comapred to last month's performance</p>
+            </div>
+          </div>
+          <div class="report">
+            <h3>Expenses</h3>
+            <div>
+              <details>
+                <h1>$9,020</h1>
+                <h6 class="danger">-1.1%</h6>
+              </details>
+              <p class="text-muted">Comapred to last month's performance</p>
+            </div>
+          </div>
+          <div class="report">
+            <h3>Cashback</h3>
+            <div>
+              <details>
+                <h1>$12,120</h1>
+                <h6 class="success">+5.1%</h6>
+              </details>
+              <p class="text-muted">Comapred to last month's performance</p>
+            </div>
+          </div>
+          <div class="report">
+            <h3>Turnover</h3>
+            <div>
+              <details>
+                <h1>$118,020</h1>
+                <h6 class="danger">-22.1%</h6>
+              </details>
+              <p class="text-muted">Comapred to last month's performance</p>
+            </div>
+          </div>
+        </div>
+        <!-- END OF MONTHLY REPORT -->
+        <div class="fast-payment">
+          <h2>Fast Payment</h2>
+          <div class="badges">
+            <div class="badge">
+              <span class="material-icons-sharp"> add </span>
+            </div>
+            <div class="badge">
+              <span class="bg-success"></span>
+              <div>
+                <h5>Training</h5>
+                <h4>$50</h4>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="bg-danger"></span>
+              <div>
+                <h5>Fuel</h5>
+                <h4>$120</h4>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="bg-primary"></span>
+              <div>
+                <h5>Internet</h5>
+                <h4>$50</h4>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="bg-success"></span>
+              <div>
+                <h5>Upskill</h5>
+                <h4>$500</h4>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="bg-success"></span>
+              <div>
+                <h5>Investments</h5>
+                <h4>$100</h4>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="bg-primary"></span>
+              <div>
+                <h5>Utility</h5>
+                <h4>$120</h4>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="bg-danger"></span>
+              <div>
+                <h5>Rent</h5>
+                <h4>$1200</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF FAST PAYMENT -->
+        <canvas id="chart"></canvas>
       </section>
       <!-- END OF MIDDLE -->
       <section class="right"></section>
       <!-- END OF RIGHT -->
     </main>
     <!-- ==== ==== END OF ASIDE ====  ====-->
+    <script src="main.js"></script>
   </body>
 
 </html>
