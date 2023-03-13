@@ -551,6 +551,13 @@ main section.right .investments .header {
   padding-bottom: 0;
 }
 
+main section.right .investments .inv-service {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 5rem;
+}
+
 main section.right .investments .header a {
   display: flex;
   align-items: center;
@@ -618,6 +625,7 @@ main .recent-transactions .txn:hover {
 main .recent-transactions .txn .service {
   display: flex;
   gap: 1rem;
+  width: 10rem;
 }
 
 main .recent-transactions .txn .service .icon {
@@ -642,4 +650,98 @@ main .recent-transactions .card-details .card {
   justify-content: center;
   padding: 0;
   border-radius: var(--border-radius-2);
+}
+
+/*Media Query for Tablets*/
+
+@media screen and (max-width:1024px) {
+  nav .search-bar {
+    display: none;
+  }
+
+  nav .profile-area {
+    gap: 2rem;
+  }
+
+  nav .profile-area button#menu-btn {
+    display: inline;
+    background: transparent;
+    color: var(--color-danger);
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: var(--color-white);
+    width: 22rem;
+    height: 100vh;
+    box-shadow: 2rem 0 2rem var(--color-primary-light);
+    display: none;
+  }
+
+  main aside button#close-btn {
+    display: inline-block;
+    width: 2rem;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  main aside .sidebar {
+    margin-top: 4rem;
+  }
+
+  main aside .updates {
+    display: none;
+  }
+
+  main section.middle .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main canvas {
+    margin: 3rem 0 1rem;
+  }
+
+  main section.right .recent-transactions {
+    margin-top: 3rem;
+  }
+
+}
+
+/* Media Queries for Mobile */
+
+@media screen and (max-width:600px) {
+  nav .profile-area {
+    gap: 2.6rem;
+  }
+
+  nav .profile h5,
+  nav .profile span {
+    display: none;
+  }
+
+  main section.middle .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main section.middle .fast-payment {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    gap: 1.4rem;
+  }
 }
