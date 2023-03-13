@@ -25,6 +25,13 @@
   --border-radius-2: 6px;
 }
 
+.dark-theme {
+  --color-white: #131316;
+  --color-light: #23232a;
+  --color-dark: #ddd;
+  --color-gray-dark: #adacb5
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -458,7 +465,7 @@ main .monthly-report {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 main .monthly-report h1 {

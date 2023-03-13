@@ -52,3 +52,12 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   sideBar.style.display = "none";
 });
+
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  themeBtn.querySelector("span:nth-child(1)").classList.toggle("active");
+  themeBtn.querySelector("span:nth-child(2)").classList.toggle("active");
+});
