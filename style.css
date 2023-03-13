@@ -676,13 +676,20 @@ main .recent-transactions .card-details .card {
   main aside {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     z-index: 3;
     background: var(--color-white);
     width: 22rem;
     height: 100vh;
     box-shadow: 2rem 0 2rem var(--color-primary-light);
     display: none;
+    animation: showSideBar 300ms ease forwards;
+  }
+
+  @keyframes showSideBar {
+    to {
+      left: 0;
+    }
   }
 
   main aside button#close-btn {

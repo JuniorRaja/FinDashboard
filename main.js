@@ -40,3 +40,15 @@ new Chart(chart, {
     responsive: true,
   },
 });
+
+const menuBtn = document.querySelector("#menu-btn");
+const closeBtn = document.querySelector("#close-btn");
+const sideBar = document.querySelector("aside");
+
+menuBtn.addEventListener("click", () => {
+  sideBar.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  sideBar.style.display = "none";
+});
